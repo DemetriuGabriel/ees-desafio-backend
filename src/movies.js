@@ -1,10 +1,9 @@
 const express = require('express');
 const router = express.Router();
 
-const authenticate = require('./authMiddleware');
+const authenticate = require('./auth');
 
 const movies = ['1'];
-const series = ['supernatural'];
 
 router.get('/movies/:id', (req, res) => {
   const { id } = req.params;

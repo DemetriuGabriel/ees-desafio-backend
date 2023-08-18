@@ -7,7 +7,7 @@ const secretKey = 'your-secret-key';
 
 const users = [];
 
-router.post('/login', (req, res) => {
+router.post('/auth/login', (req, res) => {
   const { email, password } = req.body;
   const user = users.find(user => user.email === email);
 

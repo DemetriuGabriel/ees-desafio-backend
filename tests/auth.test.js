@@ -26,5 +26,4 @@ describe('Authentication', () => {
     expect(response.body).toHaveProperty('message', 'Invalid credentials');
   });
 
-  // Outros testes de autenticação
 });
