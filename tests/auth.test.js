@@ -1,6 +1,6 @@
 const request = require('supertest');
-const app = require('../app');
-const { createUser, users } = require('../users');
+const app = require('../src/app');
+const { createUser, users } = require('../src/users');
 
 describe('Authentication', () => {
   beforeEach(() => {
